@@ -1,0 +1,319 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  letter-spacing: 3px;
+}
+
+header {
+  background: url("images/bgveg.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: darken;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+header .header-title {
+  display: block;
+  width: 30%;
+  color: white;
+  font-size: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 8rem;
+}
+
+header .header-subTitle {
+  display: block;
+  width: 35%;
+  color: white;
+  padding: 1rem 5rem;
+  padding-bottom: 3rem;
+}
+
+header span {
+  position: fixed;
+}
+
+.scroll-button {
+  margin: auto;
+  height: 50px;
+  width: 30px;
+  border: 1px solid white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  bottom: 15%;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.scroll-button::before,
+.scroll-button::after {
+  content: '';
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 5%;
+  height: 12px;
+  width: 12px;
+  border: 1px solid white;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-top: transparent;
+  border-left: transparent;
+  -webkit-transform: translate(-50% -50%);
+          transform: translate(-50% -50%);
+  -webkit-animation: scroll-button 1.5s ease-in-out infinite;
+          animation: scroll-button 1.5s ease-in-out infinite;
+}
+
+@-webkit-keyframes scroll-button {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 60%;
+  }
+}
+
+@keyframes scroll-button {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 60%;
+  }
+}
+
+#main {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidenav {
+  z-index: 3;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.sidenav a {
+  text-decoration: none;
+  font-size: 25px !important;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #ff5e35;
+  transition: 0.3s;
+  padding: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px !important;
+  margin-left: 50px;
+}
+
+span {
+  color: #f1f1f1;
+  margin: 20px;
+}
+
+#background-changer {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+  background-color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5vh;
+  font-size: 2rem;
+}
+
+.explore {
+  background: url("images/bgveg2.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: soft-light;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.survey {
+  background: url("images/bgveg3.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position: right;
+  background-blend-mode: soft-light;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #001219;
+  color: #f5fff0;
+  margin-top: 40vh;
+  padding: 5vh 5vh;
+}
+
+.container p {
+  padding-top: 3vh;
+  font-size: 60%;
+  padding-bottom: 5vh;
+}
+
+.container a {
+  z-index: 5;
+  background-color: #dc2f02;
+  border-radius: 4px;
+  padding: 1.5vh;
+  text-decoration: none;
+  color: bisque;
+  font-size: 40%;
+  -webkit-transition: background-color, color 0.5s;
+  transition: background-color, color 0.5s;
+}
+
+.container a:hover {
+  background-color: #ffba08;
+  color: black;
+}
+
+footer {
+  background-color: #111;
+  color: #f1f1f1;
+  padding: 5vh;
+}
+
+footer h2 {
+  font-size: 45px;
+}
+
+footer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 30%;
+}
+
+footer form input {
+  color: #f1f1f1;
+  background-color: transparent;
+  border: 1px solid #f1f1f18c;
+  border-radius: 3px;
+  padding-left: 2vh;
+  height: 30px;
+  min-width: 200px;
+}
+
+footer form input:hover {
+  border-color: #f1f1f1;
+}
+
+footer form label {
+  padding-top: 25px;
+}
+
+footer form .submit-btn {
+  margin-top: 3vh;
+  margin-bottom: 6vh;
+  width: 20%;
+}
+
+footer .copyright {
+  margin-top: 5vh;
+}
+
+@media screen and (max-width: 985px) {
+  header {
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    background-position: left;
+    padding-top: 2rem;
+  }
+  header .header-title {
+    padding-top: 5rem;
+    font-size: 5vh;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  header .header-subTitle {
+    width: 20vh;
+    text-align: center;
+    padding-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #background-changer {
+    width: calc(100%-300px);
+  }
+  form {
+    width: 100%;
+  }
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

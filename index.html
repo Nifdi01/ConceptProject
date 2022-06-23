@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fooders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="script.js"></script>
+
+    <main id="main">
+        <header id="mainPage">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                <a href="#mainPage">Main Page</a>
+                <a href="#explore">About</a>
+                <a href="#survey">Survey</a>
+                <a href="#join">Join Us</a>
+            </div>
+            <div id="background-changer"></div>
+            <span id="nav-span" style="font-size:30px;cursor:pointer; z-index:0;" onclick="openNav()">☰</span>
+            <h1 class="header-title">Only the fresh ingredients</h1>
+            <p class="header-subTitle">Fooders delivers you the best recipes for any occasion</p>
+            <a href="#explore">
+                <div class="scroll-button"></div>
+            </a>
+
+            </div>
+        </header>
+
+        <section id="explore" class="explore">
+            <div class="container">
+                <h3>About Us</h3>
+                <p>Fooders is a free cooking platform that provides recipes for every occasion. Moreover, you can check, rate, and learn from other users in the platform.</p>
+                <a href="#join">Become a Member</a>
+            </div>
+        </section>
+
+        <section id="survey" class="survey">
+            <div class="container">
+                <h3>Take A Nutrition Survey</h3>
+                <p>This survey will provide us with insights on what types of food you like and will recommend recipes in accordance to your results</p>
+                <a href="#">Take the Form</a>
+            </div>
+        </section>
+
+        <footer id="join">
+
+            <form action="#">
+                <h2>Fooders</h2>
+                <label for="fname">First Name:</label>
+                <input class="log-input" type="text" name="fname" id="fname">
+
+                <label for="sname">Last Name</label>
+                <input class="log-input" type="text" name="sname" id="sname">
+
+                <label for="email">E-Mail address:</label>
+                <input class="log-input" type="email" name="email" id="email">
+
+                <label for="password">Password:</label>
+                <input class="log-input" type="password" name="password" id="password">
+                <input type="submit" value="submit" class="submit-btn">
+            </form>
+
+            <p class="copyright">&copy; 2022 Fooders Inc. All rights reserved.</p>
+        </footer>
+    </main>
+
+
+</body>
+
+</html>
